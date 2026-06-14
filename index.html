@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lokesh Kondrugonti – Data Science Student, AI & Web Development Enthusiast. View projects, skills, and contact info." />
+  <meta name="keywords" content="Lokesh Kondrugonti, Data Science, AI, Machine Learning, Portfolio, Web Developer" />
+  <meta name="author" content="Lokesh Kondrugonti" />
+  <meta property="og:title" content="Lokesh Kondrugonti | Portfolio" />
+  <meta property="og:description" content="Data Science Student | AI & Web Development Enthusiast" />
+  <meta property="og:type" content="website" />
+  <title>Lokesh Kondrugonti | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-initials">LK</span>
+        <span class="logo-text">Lokesh<span class="accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Lokesh</span><br/>
+          <span class="hero-surname">Kondrugonti</span>
+        </h1>
+        <p class="hero-title">
+          <span class="typed-text" id="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-tagline">Building tomorrow's intelligent experiences — one line of code at a time.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Year B.Tech</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">AI</span>
+            <span class="stat-label">Focused</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" data-animate="fade-left">
+        <div class="hero-image-ring ring-outer"></div>
+        <div class="hero-image-ring ring-middle"></div>
+        <div class="hero-image-container">
+          <img src="profile.jpg" alt="Lokesh Kondrugonti – Data Science Student" class="hero-photo" id="hero-photo" />
+          <div class="hero-image-glow"></div>
+        </div>
+        <div class="floating-badge badge-ai">
+          <span>🤖</span> AI Enthusiast
+        </div>
+        <div class="floating-badge badge-ds">
+          <span>📊</span> Data Science
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col" data-animate="fade-right">
+          <div class="about-image-card">
+            <img src="profile.jpg" alt="Lokesh Kondrugonti" class="about-photo" />
+            <div class="about-image-overlay">
+              <div class="overlay-badge">
+                <span class="overlay-icon">🎓</span>
+                <span>Data Science Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-social-links">
+            <a href="mailto:lokeshlokesh6573@gmail.com" class="social-link" id="about-email" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" id="about-linkedin" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" id="about-github" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-content-col" data-animate="fade-left">
+          <h3 class="about-heading">Passionate about <span class="gradient-text">AI & Innovation</span></h3>
+          <p class="about-text">
+            I'm a Data Science student with a strong interest in AI, Generative AI, and software development. I love creating impactful digital products and continuously learning new technologies.
+          </p>
+          <p class="about-text">
+            Currently entering my 3rd year of B.Tech at J.B. Institute of Engineering and Technology, I combine analytical thinking with creative problem-solving to build solutions that matter.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <h4>Goal-Oriented</h4>
+                <p>Focused on building real-world AI solutions</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <h4>Fast Learner</h4>
+                <p>Quickly adapts to new technologies and frameworks</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">💡</div>
+              <div>
+                <h4>Creative Thinker</h4>
+                <p>Transforms complex problems into elegant solutions</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" id="about-cta">Let's Connect →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="education section section-alt">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Academic Journey</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-timeline" data-animate="fade-up">
+        <div class="timeline-item active">
+          <div class="timeline-dot">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3>B.Tech in Data Science</h3>
+                <span class="timeline-badge current">Currently Pursuing</span>
+              </div>
+              <span class="timeline-year">2022 – 2026</span>
+            </div>
+            <p class="timeline-institution">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              J.B. Institute of Engineering and Technology (JBIET)
+            </p>
+            <p class="timeline-description">
+              Specialized in Data Science with coursework in Machine Learning, Deep Learning, Statistical Analysis, and AI. Currently entering 3rd Year.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">AI</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories" data-animate="fade-up">
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🧠</span>
+            <h3>AI & Data Science</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="Python">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #3776ab22, #ffd43b22);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">🐍</span>
+              </div>
+              <span class="skill-name">Python</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="Data Science">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #ff6b6b22, #ffd43b22);">
+                <span class="skill-emoji">📊</span>
+              </div>
+              <span class="skill-name">Data Science</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="Machine Learning">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #4ecdc422, #45b7d122);">
+                <span class="skill-emoji">🤖</span>
+              </div>
+              <span class="skill-name">Machine Learning</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="Artificial Intelligence">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #a29bfe22, #6c5ce722);">
+                <span class="skill-emoji">🧬</span>
+              </div>
+              <span class="skill-name">Artificial Intelligence</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 78%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="Generative AI">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #fd79a822, #e8407422);">
+                <span class="skill-emoji">✨</span>
+              </div>
+              <span class="skill-name">Generative AI</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 72%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">💻</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="HTML">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #e44d2622, #f06c2522);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">🌐</span>
+              </div>
+              <span class="skill-name">HTML</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="CSS">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #264de422, #2965f122);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">🎨</span>
+              </div>
+              <span class="skill-name">CSS</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="JavaScript">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #f7df1e22, #f0db4f22);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">⚡</span>
+              </div>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="React.js">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #61dafb22, #20232a22);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">⚛️</span>
+              </div>
+              <span class="skill-name">React.js</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-card" data-skill="Git & GitHub">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #f0503222, #24292e22);">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <span class="skill-fallback-icon" style="display:none">🔧</span>
+              </div>
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-level">
+                <div class="skill-level-bar" style="--level: 82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects section section-alt">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid" data-animate="fade-up">
+        <!-- AI Verse -->
+        <div class="project-card featured" id="project-aiverse">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon-wrapper">
+              <span class="project-icon">🌌</span>
+            </div>
+            <div class="project-label">Featured Project</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI Verse</h3>
+            <p class="project-description">
+              AI Verse is a next-generation AI platform focused on productivity, intelligent conversations, and personalized user experiences. Built to push the boundaries of what's possible with modern AI technology.
+            </p>
+            <div class="project-features">
+              <div class="feature-chip">
+                <span>🤖</span> AI Chat Interface
+              </div>
+              <div class="feature-chip">
+                <span>🔐</span> User Authentication
+              </div>
+              <div class="feature-chip">
+                <span>📱</span> Responsive Design
+              </div>
+              <div class="feature-chip">
+                <span>🎛️</span> Modern Dashboard
+              </div>
+              <div class="feature-chip">
+                <span>✨</span> Personalized Experience
+              </div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Generative AI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="aiverse-demo" aria-label="View Demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <a href="#" class="project-link project-link-ghost" id="aiverse-github" aria-label="View Source">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Whether it's a project, internship, or just a chat about AI — my inbox is always open.</p>
+      </div>
+      <div class="contact-grid" data-animate="fade-up">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-email-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>Email</h4>
+              <a href="mailto:lokeshlokesh6573@gmail.com" id="contact-email-link">lokeshlokesh6573@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin-card">
+            <div class="contact-card-icon linkedin">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" id="contact-linkedin-link">Connect on LinkedIn</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location-card">
+            <div class="contact-card-icon location">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-card-content">
+              <h4>Location</h4>
+              <span>Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <div class="availability-dot"></div>
+            <span>Open to internships & collaborations</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Internship Opportunity / Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <div class="form-success" id="form-success">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-initials">LK</span>
+            <span class="logo-text">Lokesh<span class="accent">.</span></span>
+          </a>
+          <p>Building intelligent solutions with passion and precision.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="mailto:lokeshlokesh6573@gmail.com" class="footer-social" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lokesh Kondrugonti. Crafted with <span style="color:#e74c3c">❤️</span> and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
